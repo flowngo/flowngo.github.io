@@ -45,4 +45,6 @@ $theme-dark: #222;
 
 .header-content-inner {
         max-width: 800px !important;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: rgb(60, 60, 130);
 }
