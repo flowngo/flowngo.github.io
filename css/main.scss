@@ -45,6 +45,14 @@ $theme-dark: #222;
 
 .header-content-inner {
         max-width: 800px !important;
+}
+
+.header-content-outline-main {
         -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: rgb(60, 60, 130);
+}
+
+.header-content-outline-sub {
+        -webkit-text-stroke-width: 0.5px;
         -webkit-text-stroke-color: rgb(60, 60, 130);
 }
