@@ -110,19 +110,24 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        // border-color: rgba(white, .3);
+        border-color: rgba(black, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            // color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover,
             &:focus {
-                color: white;
+                // color: white;
+                color: black;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            // color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
-                color: white;
+                // color: white;
+                color: black;
             }
         }
         &.affix {
