@@ -34,7 +34,7 @@ country.
 
 <p align="center" style="font-size:14px">
 <img src="../img/grass.jpg" alt="drawing" width="100%">
-This is the grass where Ketevan will have a baby
+This is the grass
 </p>
 
 After Ketevan and Davit both went to study abroad and pursue their dreams
