@@ -16,14 +16,16 @@ logo: img/logo/wave.png
 social:
   - icon:	twitter
     url:	https://twitter.com/flowngo
-    desc: Follow us on twitter
+    desc: Follow us on Twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
-
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  - icon: linkedin
+    url:	https://www.linkedin.com/company/flow-future-leaders-for-open-world/
+    desc: Follow us on LinkedIn
+    share_url: http://www.linkedin.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+  - icon: facebook
+    url: https://www.facebook.com/flowglobalngo
+    desc: Follow us on Facebook
