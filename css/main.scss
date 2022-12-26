@@ -35,7 +35,7 @@
 
 // variables.less
 // $theme-primary: #F05F40;
-$theme-primary: #29444B;
+$theme-primary: rgba(0,0,0,0.8);
 // $theme-primary: #3c8282;
 $theme-dark: #222;
 
@@ -43,7 +43,8 @@ $theme-dark: #222;
 @import
         "mixins",
         "base",
-        "custom"
+        "custom",
+        "borrowed"
 ;
 
 // .header-content-inner {
