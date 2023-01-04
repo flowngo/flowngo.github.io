@@ -1,8 +1,8 @@
 ---
 layout: post-layout
-title: Young Ambassadors
+title: Work with us
 description: Become a FLOW Young Ambassador
-image: ../img/header-old4.jpg
+image: ../img/teaser.jpg
 date: 27 December 2022
 ---
 

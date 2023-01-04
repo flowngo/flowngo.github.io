@@ -11,7 +11,7 @@ github_username: flowngo
 
 # Build settings
 markdown: kramdown
-logo: img/logo/wave.png
+logo: img/logo/logo-flow.png
 
 social:
   - icon:	twitter

@@ -1,0 +1,11 @@
+<main class="content content-wide" role="main">
+    <h5 class="index-headline featured"><span></span></h5>
+
+    <div class="container featured">
+        {{ content }}
+    </div>
+
+    {% if page.date %}
+        <h5 class="index-headline featured"><span>{{ page.date }}</span></h5>
+    {% endif %}
+</main>

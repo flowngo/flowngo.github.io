@@ -32,10 +32,10 @@ U.S. Embassy in Georgia designed Ketevan and Davit as honorable alumni and
 recognized Natela Urushadze as the best American Coordinator across the
 country.
 
-<p align="center" style="font-size:14px">
+<!-- <p align="center" style="font-size:14px">
 <img src="../img/grass.jpg" alt="drawing" width="100%">
 This is the grass
-</p>
+</p> -->
 
 After Ketevan and Davit both went to study abroad and pursue their dreams
 after graduating high school. They continued keeping in touch with Natela

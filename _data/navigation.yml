@@ -1,0 +1,36 @@
+- title: Who we are
+  sublinks:
+    - title: Our story
+      url: /our-story
+    - title: Leadership
+      url: /leadership
+    - title: Work with us
+      url: /young-ambassadors
+- title: What we do
+  sublinks:
+    - title: Our focus
+      sublinks:
+        - title: Sub1
+          url: /sub1
+        - title: Sub2
+          url: /sub2
+    - title: How we work
+      url: /how-we-work
+- title: Our partners
+  sublinks:
+    - title: American Corner Tbilisi
+      url: /american-corner-tbilisi
+    - title: U.S. Embassy Tbilisi
+      url: /us-embassy
+    - title: Korbel School, University of Denver
+      url: /korbel-school
+    - title: Science Po, Paris
+      url: /science-po
+- title: Op-Eds and Reports
+  sublinks:
+    - title: Op-Eds
+      url: /op-eds
+    - title: Imagine Peace Speech Collection
+      url: /imagine-peace
+- title: Donate
+  url: /donate

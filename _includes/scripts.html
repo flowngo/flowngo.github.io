@@ -11,3 +11,21 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/creative.js"></script>
+
+<!-- Replace div with another -->
+<script>
+    function replace(hide, show) {
+        document.getElementById(hide).style.display="none";
+        document.getElementById(show).style.display="block";
+    }
+</script>
+
+<script>
+let dropdowns = document.querySelectorAll('.dropdown-toggle')
+dropdowns.forEach((dd)=>{
+    dd.addEventListener('click', function (e) {
+        var el = this.nextElementSibling
+        el.style.display = el.style.display==='block'?'none':'block'
+    })
+})
+</script>
