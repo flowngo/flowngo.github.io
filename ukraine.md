@@ -18,7 +18,7 @@ International Studies</a>, University of Denver.
 
 The discussion was supported by Professor Steve Recca of the Korbel School
 and Ambassador of Georgia to the Republic of Bulgaria & North Macedonia
-Tamara Liluashvili
+Tamara Liluashvili.
 
 <div class="container-fluid">
     <div class="row no-gutter justify-content-center text-center">
@@ -31,5 +31,29 @@ Tamara Liluashvili
                 </div>
             </div>
         {% endfor %}
+    </div>
+</div>
+
+<h5 class="index-headline featured"><span></span></h5>
+
+## Conversation on the war in Ukraine with **Littleton High School Students**
+
+On 21 April 2022, FLOW's Co-founder Ketevan Chincharadze and Associate Dean
+of the Josef Korbel School Dr. Lewis Griffith were invited at Littleton
+High School in Denver, Colorado to talk about the ongoing war in Ukraine.
+
+The discussion was co-organized by Littleton High School and the Denver
+Council on Foreign Relations to raise students' awareness on one of the
+most pressing security challenges in the world.
+
+<div class="row">
+    <div class="col-md-6"><img src="img/ukraine/s2im1.webp" class="img-responsive participant-img ukraine-grid-img"></div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12"><img src="img/ukraine/s2im2.webp" class="img-responsive participant-img ukraine-grid-img"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><img src="img/ukraine/s2im3.webp" class="img-responsive participant-img ukraine-grid-img"></div>
+        </div>
     </div>
 </div>
