@@ -1,9 +1,10 @@
 ---
-layout: post-layout-wide
+layout: post-layout
 title: Executive Leadership
 description: Meet our executive team
 image: ../img/teaser.jpg
 date: 27 December 2022
+content-class: wide-12
 ---
 
 {% for leader in site.data.leaders %}

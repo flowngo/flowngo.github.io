@@ -2,7 +2,7 @@ Natela Urushadze has been a Coordinator of the American Corner Tbilisi for
 16 years. Since its opening in 2006, Mrs. Urushadze has managed an array of
 educational and outreach projects within the U.S. State Department’s
 strategic framework. She has vast experience in designing and conducting
-U.S. government-funded projects. <br><br>
+U.S. government-funded projects.<br><br>
 Under her leadership, the American Corner Tbilisi has been designated as
 the best-run in the country. Mrs. Urushadze was the first to come up with
 and design the summer school/camp curriculum for the Corner over a decade

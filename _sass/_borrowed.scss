@@ -33,7 +33,7 @@ $rs: 16px;
 
     .blog-title {
         margin: 0;
-        padding: $rs*5.25 $rs $rs/2;
+        padding: calc($rs*5.25) $rs calc($rs/2);
         font-size: 50px;
         text-align: center;
         font-weight: 700;
@@ -42,12 +42,17 @@ $rs: 16px;
         line-height: 50px;
         word-break: break-word;
         color: #333;
+
+        &.no-color {
+            // Unset color since we are using gradient
+            color: unset;
+        }
     }
 
     .blog-description {
         margin: 0 0 20px;
         padding: 0 $rs*2;
-        font-size: $rs/8*9;
+        font-size: calc($rs/8*9);
         line-height: 1.5;
         color: #666;
         text-align: center;
@@ -77,7 +82,7 @@ $rs: 16px;
 
     span {
         color: #b3b3b1;
-        font-size: $rs/8*5;
+        font-size: calc($rs/8*5);
         text-transform: uppercase;
         letter-spacing: 1px;
     }
@@ -90,6 +95,15 @@ $rs: 16px;
 .content {
     width: 100%;
     max-width: 640px;
+
+    &.wide-9 {
+        max-width: 960px;
+    }
+
+    &.wide-12 {
+        max-width: 1280px;
+    }
+
     margin: 0 auto;
 
     //   @include box-sizing(border-box)
@@ -147,8 +161,4 @@ $rs: 16px;
             }
         }
     }
-}
-
-.content-wide {
-    max-width: 1280px;
 }

@@ -1,4 +1,4 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top {{ page.navbar-class }}">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -16,58 +16,45 @@
             <ul class="nav navbar-nav navbar-right">
                 {% assign links = site.data.navigation %}
                 {% for link in links %}
-                    {% assign class = nil %}
-                    {% if page.url contains link.url %}
-                        {% assign class = 'active' %}
-                    {% endif %}
-                    {% if link.sublinks %}
-                        <li class="dropdown {{ class }}">
-                            <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}"
-                                class="dropdown-toggle"
-                                data-toggle="dropdown"
-                                role="button"
-                                data-bs-auto-close="outside"
-                                aria-haspopup="true"
-                                aria-expanded="false">
-                                {{ link.title }} <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
-                                {% for sublink in link.sublinks %}
-                                    {% if sublink.title == 'separator' %}
-                                        <li role="separator" class="divider"></li>
-                                    {% elsif sublink.sublinks %}
-                                        <li class="dropdown">
-                                            <a class="dropdown-item dropdown-toggle"
-                                                data-bs-toggle="dropdown"
-                                                aria-haspopup="true"
-                                                aria-expanded="false"
-                                                tabindex="-1"
-                                                href="#">
-                                                {{ sublink.title }} <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu"
-                                                aria-labelledby="multilevelDropdownMenu1">
-                                                {% for subsublink in sublink.sublinks %}
-                                                    <li>
-                                                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ subsublink.url }}">{{ subsublink.title }}</a>
-                                                    </li>
-                                                {% endfor %}
-                                            </ul>
-                                        </li>
-                                    {% else %}
-                                        <li>
-                                            <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                        </li>
-                                    {% endif %}
+                {% assign class = nil %}
+                {% if page.url contains link.url %}
+                {% assign class = 'active' %}
+                {% endif %}
+                {% if link.sublinks %}
+                <li class="dropdown {{ class }}">
+                    <!-- <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" -->
+                    <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                        data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                        {{ link.title }} <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                        {% for sublink in link.sublinks %}
+                            {% if sublink.title == 'separator' %}
+                                <li role="separator" class="divider"></li>
+                            {% elsif sublink.title == 'space' %}
+                                <span style="height: 8px; display: block;"></span>
+                            {% elsif sublink.subsublinks %}
+                                <h6 class="dropdown-header">{{ sublink.title }}</h6>
+                                {% for subsublink in sublink.subsublinks %}
+                                    <li>
+                                        <a class="dropdown-item dropdown-subitem" href="{{ subsublink.url }}">{{ subsublink.title }}</a>
+                                    </li>
                                 {% endfor %}
-                            </ul>
-                        </li>
-                    {% else %}
-                        <li class="{{ class }}">
-                            <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                        </li>
-                    {% endif %}
+                            {% else %}
+                                <li>
+                                    <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% else %}
+                <li class="{{ class }}">
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
-</div></nav>
+    </div>
+</nav>

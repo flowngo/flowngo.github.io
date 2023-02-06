@@ -10,13 +10,18 @@
     <a class="blog-logo" href="{{site.url}}{{site.baseurl}}"
         style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
     {% endif %}
-    <h1 class="blog-title">{{ page.title }}</h1>
+    {% if page.title == 'FLOWStandsWithUkraine' %}
+        <div id="multicolor-ukraine">
+            <h1 class="blog-title no-color">{{ page.title }}</h1>
+        </div>
+    {% else %}
+        <h1 class="blog-title">{{ page.title }}</h1>
+    {% endif %}
     <h2 class="blog-description">{{ page.description }}</h2>
     <div class="custom-links">
         {% for social in site.social %}
         {% if social.url %}
-        <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}" {%
-            endif %}">
+        <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}" {% endif %}">
             <i class="fa fa-{{ social.icon }}"></i>
         </a>
         &nbsp;&nbsp;·&nbsp;&nbsp;

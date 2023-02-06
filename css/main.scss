@@ -39,6 +39,11 @@ $theme-primary: rgba(0,0,0,0.8);
 // $theme-primary: #3c8282;
 $theme-dark: #222;
 
+$blukraine: rgb(5, 57, 160);
+$yellowkraine: rgb(250, 217, 101);
+
+$link: #017698;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",

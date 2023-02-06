@@ -160,3 +160,61 @@
 .dark-bg:hover .overlay-text {
     opacity: 0.8;
 }
+
+.dropdown-header {
+    // In order for subsublinks to be closer
+    // margin-top: 0;
+    margin-bottom: 0;
+    // font-size: 14px;
+    text-transform: uppercase;
+}
+
+.dropdown-subitem {
+    text-indent: 6%;
+    padding-right: 20%;
+}
+
+.dropdown-menu>li>a {
+    // The indent under subitem pushes the link to the right
+    // so we make some space here.
+    padding: 3px 40px 3px 20px;
+}
+
+#multicolor-ukraine {
+    background-image: url(../img/ukraine-bg.jpg);
+    background-size: 90% 100%;
+    background-position: fixed;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nice-link {
+    color: #017698;
+    text-decoration: underline;
+}
+
+.ukraine-grid-img {
+    // width: 100%;
+    // max-width: 310px;
+    // height: 200px;
+    padding: 10px;
+}
+
+.participant-name {
+    padding-left: 10px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.participant-desc {
+    width: 90%;
+    max-width: 310px;
+    padding-left: 10px;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    min-height: 80px;
+}

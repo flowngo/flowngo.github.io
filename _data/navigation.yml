@@ -9,13 +9,29 @@
 - title: What we do
   sublinks:
     - title: Our focus
-      sublinks:
-        - title: Sub1
-          url: /sub1
-        - title: Sub2
-          url: /sub2
+      subsublinks:
+        - title: Peace & Security
+          url: /suba1
+        - title: Community Empowerment
+          url: /suba2
+        - title: Economic Sustainability
+          url: /suba3
+        - title: Climate Change
+          url: /suba4
+        - title: Technology & Innovation
+          url: /suba5
+    - title: separator
     - title: How we work
-      url: /how-we-work
+      subsublinks:
+        - title: WPS Tbilisi International Conference
+          url: /subb1
+        - title: "#FLOWStandswithUkraine"
+          url: /ukraine
+        - title: Digital Education for Cybersecurity
+          url: /subb3
+        - title: Upcoming Events
+          url: /subb4
+    - title: space
 - title: Our partners
   sublinks:
     - title: American Corner Tbilisi
