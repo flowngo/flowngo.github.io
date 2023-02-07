@@ -37,16 +37,16 @@
     - title: American Corner Tbilisi
       url: /american-corner
     - title: U.S. Embassy Tbilisi
-      url: /us-embassy
+      url: "#"
     - title: Korbel School, University of Denver
-      url: /korbel-school
+      url: "#"
     - title: Science Po, Paris
-      url: /science-po
+      url: "#"
 - title: Op-Eds and Reports
   sublinks:
     - title: Op-Eds
       url: /op-eds
     - title: Imagine Peace Speech Collection
-      url: /imagine-peace
+      url: "#"
 - title: Donate
-  url: /donate
+  url: "#"

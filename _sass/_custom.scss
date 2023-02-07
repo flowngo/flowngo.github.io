@@ -208,14 +208,7 @@ figcaption {
     width: var(--w9px);
 }
 
-#fade-image-2 {
-    // position: absolute;
-    // -webkit-animation-delay: -12s;
-    // animation-delay: -12s;
-}
-
-#fade-image-3 {
-    // position: relative;
-    // -webkit-animation-delay: -6s;
-    // animation-delay: -6s;
+.vertical-align {
+    display: flex;
+    align-items: center;
 }

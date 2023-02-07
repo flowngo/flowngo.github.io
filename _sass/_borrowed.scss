@@ -106,9 +106,12 @@ $rs: 16px;
     }
 
     .card {
-        max-width: var(--w9px);
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .card.oped {
+        max-width: var(--w6px);
     }
 
     margin: 0 auto;

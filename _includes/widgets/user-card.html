@@ -1,18 +1,14 @@
-<div id="{{include.card-id}}" class="card mb-3" style="display: none;">
-    <div class="row no-gutters">
-        <div class="col-md-4">
+<div id="{{include.card-id}}" class="card mb-3 mw-9" style="display: none;">
+    <div class="row no-gutters vertical-align">
+        <div class="col-md-4 mt-5">
             <img src="{{include.card-img}}" class="card-img" width="100%">
         </div>
         <div class="col-md-8">
             <div class="card-body">
                 <h2 class="card-title">{{include.name}}</h2>
                 <p class="card-text">{% include bios/{{include.card-text}}.md %}</p>
-                <p class="card-text">
-                    <small class="text-muted btn">
-                        <p onclick="replace('{{include.card-id}}', 'all-leaders')">
-                            Close
-                        </p>
-                    </small>
+                <p onclick="replace('{{include.card-id}}', 'all-leaders')" class="text-muted btn">
+                    Close
                 </p>
             </div>
         </div>

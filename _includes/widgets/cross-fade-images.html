@@ -11,8 +11,7 @@
         {% else %}
             {% assign index = forloop.length | minus: forloop.index | plus: 1 %}
         {% endif %}
-        {% assign seconds = include.seconds | times: index %}
-        {% assign seconds = 0 | minus: seconds %}
+        {% assign seconds = 0 | minus: include.seconds | times: index %}
         {% assign webkit = "-webkit-animation-delay: " | append: seconds | append: "s; " %}
         {% assign anim = "animation-delay: " | append: seconds | append: "s; " %}
         {% if forloop.last %}
@@ -37,8 +36,7 @@
         {% else %}
             {% assign index = forloop.length | minus: forloop.index | plus: 1 %}
         {% endif %}
-        {% assign seconds = include.seconds | times: index %}
-        {% assign seconds = 0 | minus: seconds %}
+        {% assign seconds = 0 | minus: include.seconds | times: index %}
         {% assign webkit = "-webkit-animation-delay: " | append: seconds | append: "s; " %}
         {% assign anim = "animation-delay: " | append: seconds | append: "s; " %}
         {% if forloop.last %}
