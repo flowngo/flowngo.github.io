@@ -16,43 +16,43 @@
             <ul class="nav navbar-nav navbar-right">
                 {% assign links = site.data.navigation %}
                 {% for link in links %}
-                {% assign class = nil %}
-                {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-                {% endif %}
-                {% if link.sublinks %}
-                <li class="dropdown {{ class }}">
-                    <!-- <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" -->
-                    <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                        data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
-                        {{ link.title }} <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
-                        {% for sublink in link.sublinks %}
-                            {% if sublink.title == 'separator' %}
-                                <li role="separator" class="divider"></li>
-                            {% elsif sublink.title == 'space' %}
-                                <span style="height: 8px; display: block;"></span>
-                            {% elsif sublink.subsublinks %}
-                                <h6 class="dropdown-header">{{ sublink.title }}</h6>
-                                {% for subsublink in sublink.subsublinks %}
+                    {% assign class = nil %}
+                    {% if page.url contains link.url %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+                    {% if link.sublinks %}
+                    <li class="dropdown {{ class }}">
+                        <!-- <a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" -->
+                        <a href="{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
+                            {{ link.title }} <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                            {% for sublink in link.sublinks %}
+                                {% if sublink.title == 'separator' %}
+                                    <li role="separator" class="divider"></li>
+                                {% elsif sublink.title == 'space' %}
+                                    <span style="height: 8px; display: block;"></span>
+                                {% elsif sublink.subsublinks %}
+                                    <h6 class="dropdown-header">{{ sublink.title }}</h6>
+                                    {% for subsublink in sublink.subsublinks %}
+                                        <li>
+                                            <a class="dropdown-item dropdown-subitem" href="{{ subsublink.url }}">{{ subsublink.title }}</a>
+                                        </li>
+                                    {% endfor %}
+                                {% else %}
                                     <li>
-                                        <a class="dropdown-item dropdown-subitem" href="{{ subsublink.url }}">{{ subsublink.title }}</a>
+                                        <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
                                     </li>
-                                {% endfor %}
-                            {% else %}
-                                <li>
-                                    <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-                {% else %}
-                <li class="{{ class }}">
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-                {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% else %}
+                    <li class="{{ class }}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>

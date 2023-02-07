@@ -15,9 +15,19 @@
 <!-- Replace div with another -->
 <script>
     function replace(hide, show) {
-        document.getElementById(hide).style.display="none";
-        document.getElementById(show).style.display="block";
+        document.getElementById(hide).style.display = "none";
+        document.getElementById(show).style.display = "block";
     }
+</script>
+
+<!-- To center images which are wider than the container they are in -->
+<script>
+    $(".wide-image-center>img").each(function (i, img) {
+        $(img).css({
+            position: "relative",
+            left: ($(img).parent().width() - $(img).width()) / 2
+        });
+    });
 </script>
 
 <!-- This script disables "click anywhere to close dropdown" mechanism. -->

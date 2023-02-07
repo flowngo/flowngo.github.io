@@ -1,0 +1,38 @@
+:root {
+    --w3px: 320px;
+    --w6px: 640px;
+    --w9px: 960px;
+    --w12px: 1280px;
+}
+
+.mw-3 {
+    max-width: var(--w3px);
+}
+
+.mw-6 {
+    max-width: var(--w6px);
+}
+
+.mw-9 {
+    max-width: var(--w9px);
+}
+
+.mw-12 {
+    max-width: var(--w12px);
+}
+
+.mw-p-25 {
+    max-width: 25%;
+}
+
+.mw-p-50 {
+    max-width: 50%;
+}
+
+.mw-p-75 {
+    max-width: 75%;
+}
+
+.mw-p-100 {
+    max-width: 100%;
+}

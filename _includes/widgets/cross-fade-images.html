@@ -1,0 +1,51 @@
+{% assign total_seconds = {{include.data.size}} | times: {{include.seconds}} %}
+{% assign webkit = "-webkit-animation-duration " | append: total_seconds | append: "s; " %}
+{% assign anim = "animation-duration: " | append: total_seconds | append: "s; " %}
+{% assign duration_style = webkit | append: anim %}
+
+<div class="cross-fade">
+    {% assign items = {{include.data}} %}
+    {% for image in items %}
+        {% if forloop.first %}
+            {% assign index = 0 %}
+        {% else %}
+            {% assign index = forloop.length | minus: forloop.index | plus: 1 %}
+        {% endif %}
+        {% assign seconds = include.seconds | times: index %}
+        {% assign seconds = 0 | minus: seconds %}
+        {% assign webkit = "-webkit-animation-delay: " | append: seconds | append: "s; " %}
+        {% assign anim = "animation-delay: " | append: seconds | append: "s; " %}
+        {% if forloop.last %}
+            {% assign style = "position: relative; " | append: webkit | append: anim %}
+        {% else %}
+            {% assign style = "position: absolute; " | append: webkit | append: anim %}
+        {% endif %}
+        <img
+            id="fade-image-{{forloop.index}}"
+            src="{{ image.path }}"
+            style="{{ style }}; {{ duration_style }}"
+            class="mw-p-100 fade-image-width"
+        >
+    {% endfor %}
+</div>
+
+<div class="cross-fade" style="{{ div_style }}">
+    {% assign items = {{include.data}} %}
+    {% for image in items %}
+        {% if forloop.first %}
+            {% assign index = 0 %}
+        {% else %}
+            {% assign index = forloop.length | minus: forloop.index | plus: 1 %}
+        {% endif %}
+        {% assign seconds = include.seconds | times: index %}
+        {% assign seconds = 0 | minus: seconds %}
+        {% assign webkit = "-webkit-animation-delay: " | append: seconds | append: "s; " %}
+        {% assign anim = "animation-delay: " | append: seconds | append: "s; " %}
+        {% if forloop.last %}
+            {% assign style = "position: relative; " | append: webkit | append: anim %}
+        {% else %}
+            {% assign style = "position: absolute; " | append: webkit | append: anim %}
+        {% endif %}
+        <span id="fade-image-{{forloop.index}}" style="{{ style }}; {{ duration_style }}">Figure {{forloop.index}} / {{forloop.length}}</span>
+    {% endfor %}
+</div>

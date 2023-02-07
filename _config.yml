@@ -9,6 +9,13 @@ url: "" # the base hostname & protocol for your site
 twitter_username: flowngo
 github_username: flowngo
 
+collections:
+  posts:
+    output: true
+
+permalink: pretty
+permalink: /:title
+
 # Build settings
 markdown: kramdown
 logo: img/logo/logo-flow.png

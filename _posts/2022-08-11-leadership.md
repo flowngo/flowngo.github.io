@@ -2,8 +2,7 @@
 layout: post-layout
 title: Executive Leadership
 description: Meet our executive team
-image: ../img/teaser.jpg
-date: 27 December 2022
+image: /img/teaser.jpg
 content-class: wide-12
 ---
 
@@ -20,7 +19,7 @@ content-class: wide-12
 %}
 {% endfor %}
 
-<div id="all-leaders" class="container-fluid">
+<div id="all-leaders" class="container-fluid mw-9">
     <div class="row no-gutter">
         {% for leader in site.data.leaders %}
             <div class="col-lg-4 col-sm-6 leader-box">

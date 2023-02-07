@@ -11,31 +11,31 @@
     - title: Our focus
       subsublinks:
         - title: Peace & Security
-          url: /suba1
+          url: "#"
         - title: Community Empowerment
-          url: /suba2
+          url: "#"
         - title: Economic Sustainability
-          url: /suba3
+          url: "#"
         - title: Climate Change
-          url: /suba4
+          url: "#"
         - title: Technology & Innovation
-          url: /suba5
+          url: "#"
     - title: separator
     - title: How we work
       subsublinks:
         - title: WPS Tbilisi International Conference
-          url: /subb1
-        - title: "#FLOWStandswithUkraine"
+          url: /wps2020
+        - title: "FLOW Stands With Ukraine"
           url: /ukraine
         - title: Digital Education for Cybersecurity
-          url: /subb3
+          url: "#"
         - title: Upcoming Events
-          url: /subb4
+          url: "#"
     - title: space
 - title: Our partners
   sublinks:
     - title: American Corner Tbilisi
-      url: /american-corner-tbilisi
+      url: /american-corner
     - title: U.S. Embassy Tbilisi
       url: /us-embassy
     - title: Korbel School, University of Denver

@@ -41,6 +41,7 @@ $theme-dark: #222;
 
 $blukraine: rgb(5, 57, 160);
 $yellowkraine: rgb(250, 217, 101);
+$corner: rgb(190, 37, 27);
 
 $link: #017698;
 
@@ -49,7 +50,8 @@ $link: #017698;
         "mixins",
         "base",
         "custom",
-        "borrowed"
+        "borrowed",
+        "general"
 ;
 
 // .header-content-inner {
