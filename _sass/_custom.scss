@@ -218,3 +218,19 @@ figcaption {
     border-left: 1px solid #bebebc;
     right: 50%;
 }
+
+.fancy-name {
+    padding-right: 0 !important;
+    text-align: right;
+}
+
+.fancy-lname {
+    margin-top: 0;
+    padding-right: 0 !important;
+    text-align: right;
+    font-weight: 600;
+}
+
+.small-flag {
+    width: 150px;
+}

@@ -17,6 +17,7 @@ no_index_headline: true
     card-text=card-text
     card-img=card-img
     name=leader.name
+    lname=leader.lname
 %}
 {% endfor %}
 
@@ -31,7 +32,7 @@ no_index_headline: true
                         <div class="text">Click for more</div>
                     </div>
                 </div>
-                <p class="leader-name">{{ leader.name }}</p>
+                <p class="leader-name">{{ leader.name }} {{ leader.lname }}</p>
                 <p class="leader-role">{{ leader.role }}</p>
             </div>
         {% endfor %}
