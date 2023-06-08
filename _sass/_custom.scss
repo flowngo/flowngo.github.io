@@ -212,3 +212,9 @@ figcaption {
     display: flex;
     align-items: center;
 }
+
+.vertical-line {
+    height: 100%;
+    border-left: 1px solid #bebebc;
+    right: 50%;
+}

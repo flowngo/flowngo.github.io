@@ -4,6 +4,7 @@ title: Executive Leadership
 description: Meet our executive team
 image: /img/teaser.jpg
 content-class: wide-12
+no_index_headline: true
 ---
 
 {% for leader in site.data.leaders %}

@@ -1,5 +1,7 @@
 <main class="content {{ page.content-class }}" role="main">
+    {% unless page.no_index_headline %}
     <h5 class="index-headline featured"><span></span></h5>
+    {% endunless %}
 
     <div class="container featured {% if page.text-center %} text-center {% endif %}">
         {{ content }}
