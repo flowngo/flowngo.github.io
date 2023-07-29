@@ -2,13 +2,13 @@
 </div>
 
 <div class="blog-header">
-    {% if page.logo %}
+    <!-- {% if page.logo %}
     <a class="blog-logo" href="{{site.url}}{{site.baseurl}}"
         style="background-image: url('{{ page.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
     {% elsif site.logo %}
     <a class="blog-logo" href="{{site.url}}{{site.baseurl}}"
         style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
-    {% endif %}
+    {% endif %} -->
     {% if page.ukraine %}
     <div id="multicolor-ukraine">
         <h1 class="blog-title no-color">{{ page.title }}</h1>
@@ -16,7 +16,7 @@
     {% else %}
         <h1 class="blog-title">{% unless page.skip_post_title %}{{page.title }}{% endunless %}</h1>
     {% endif %}
-    <h2 class="blog-description">{{ page.description }}</h2>
+    <h2 class="blog-description">{% unless page.skip_desc %}{{page.description }}{% endunless %}</h2>
     <div class="custom-links">
         {% for social in site.social %}
         {% if social.url %}

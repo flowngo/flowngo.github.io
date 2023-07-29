@@ -150,7 +150,8 @@ figcaption {
     color: rgba(black, .5);
 }
 
-.cross-fade img, .cross-fade span {
+.cross-fade img,
+.cross-fade span {
     position: relative;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
@@ -233,4 +234,62 @@ figcaption {
 
 .small-flag {
     width: 150px;
+}
+
+.oped-title {
+    // font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    max-width: unset !important;
+}
+
+.oped-row>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.oped-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oped-img {
+    height: 100% !important;
+    margin-bottom: 20px;
+}
+
+.oped-brief {
+    padding-left: 0 !important;
+}
+
+.oped-link:link {
+    text-decoration: none;
+}
+
+.oped-link:visited {
+    text-decoration: none;
+}
+
+.oped-link:hover {
+    text-decoration: none;
+}
+
+.oped-link>*:hover {
+    color: #777;
+}
+
+.oped-link:active {
+    text-decoration: none;
+}
+
+.author {
+    font-size: 15px;
+    font-weight: 800;
 }

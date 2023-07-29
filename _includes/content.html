@@ -7,6 +7,12 @@
         {{ content }}
     </div>
 
+    {% if page.author %}
+        <p class="author">
+            By {{ page.author }}
+        </p>
+    {% endif %}
+
     {% if page.date %}
         <h5 class="index-headline featured"><span>{{ page.date }}</span></h5>
     {% endif %}
