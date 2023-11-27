@@ -22,4 +22,4 @@ focus.
 We aim to equip our Ambassadors with relevant toolkits and critical
 thinking skills to make impact within their communities.
 
-If you want to join our team, fill out the application!
+If you want to join our team, send us an email!

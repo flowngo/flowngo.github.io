@@ -6,8 +6,8 @@ description: Flow descr
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username: flowngo
-github_username: flowngo
+linkedin_username: company/flow-future-leaders-for-open-world
+facebook_username: flowglobalngo
 
 collections:
   posts:
@@ -21,12 +21,6 @@ markdown: kramdown
 logo: img/logo/logo-flow.png
 
 social:
-  - icon:	twitter
-    url:	https://twitter.com/flowngo
-    desc: Follow us on Twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
   - icon: linkedin
     url:	https://www.linkedin.com/company/flow-future-leaders-for-open-world/
     desc: Follow us on LinkedIn

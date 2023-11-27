@@ -10,15 +10,15 @@
   sublinks:
     - title: Our focus
       subsublinks:
-        - title: Peace & Security
+        - title: Economic Development
+          url: "#"
+        - title: Environmental Progress
+          url: "#"
+        - title: International Peace & Security
+          url: "#"
+        - title: Research and Development
           url: "#"
         - title: Community Empowerment
-          url: "#"
-        - title: Economic Sustainability
-          url: "#"
-        - title: Climate Change
-          url: "#"
-        - title: Technology & Innovation
           url: "#"
     - title: separator
     - title: How we work
